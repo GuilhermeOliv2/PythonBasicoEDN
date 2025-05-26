@@ -68,3 +68,18 @@ elif temperatura == 6:
     print (f"{temperatura}°F")
 else:
     print("opção invalida.")
+
+#calculadora de ano bissexto 
+
+ano = int (input("digite um ano: "))
+
+if ano % 4 == 0:
+    if ano % 100 == 0:
+        if ano % 400 == 0:
+            print ("ano bissexto")
+        else:
+            print ("ano não bissexto")
+    else: 
+        print ("ano bissexto")
+else:
+    print ("ano não bissexto")
